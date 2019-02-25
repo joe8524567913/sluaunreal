@@ -46,33 +46,33 @@ public:
 	UFUNCTION(BlueprintCallable, meta=( DisplayName="Call To Lua" ), Category="slua")
 	static FLuaBPVar CallToLua(FString FunctionName,FString StateName);
 
-	UFUNCTION(BlueprintCallable, Category="slua")
+	UFUNCTION(BlueprintPure,mata = (CompactNodeTitle = "->",BlueprintAutocast), Category="slua")
 	static FLuaBPVar CreateVarFromInt(int Value);
 
-	UFUNCTION(BlueprintCallable, Category="slua")
+	UFUNCTION(BlueprintPure,mata = (CompactNodeTitle = "->",BlueprintAutocast), Category="slua")
 	static FLuaBPVar CreateVarFromString(FString Value);
 
-	UFUNCTION(BlueprintCallable, Category="slua")
+	UFUNCTION(BlueprintPure,mata = (CompactNodeTitle = "->",BlueprintAutocast), Category="slua")
 	static FLuaBPVar CreateVarFromNumber(float Value);
 
-	UFUNCTION(BlueprintCallable, Category="slua")
+	UFUNCTION(BlueprintPure,mata = (CompactNodeTitle = "->",BlueprintAutocast), Category="slua")
 	static FLuaBPVar CreateVarFromBool(bool Value);
 
-	UFUNCTION(BlueprintCallable, Category="slua")
+	UFUNCTION(BlueprintPure,mata = (CompactNodeTitle = "->",BlueprintAutocast), Category="slua")
 	static FLuaBPVar CreateVarFromObject(UObject* Value);
 
-	UFUNCTION(BlueprintCallable, Category="slua")
+	UFUNCTION(BlueprintPure,mata = (CompactNodeTitle = "->",BlueprintAutocast), Category="slua")
 	static int GetIntFromVar(FLuaBPVar Value,int Index=1);
 	
-	UFUNCTION(BlueprintCallable, Category="slua")
+	UFUNCTION(BlueprintPure,mata = (CompactNodeTitle = "->",BlueprintAutocast), Category="slua")
 	static float GetNumberFromVar(FLuaBPVar Value,int Index=1);
 
-	UFUNCTION(BlueprintCallable, Category="slua")
+	UFUNCTION(BlueprintPure,mata = (CompactNodeTitle = "->",BlueprintAutocast), Category="slua")
 	static FString GetStringFromVar(FLuaBPVar Value,int Index=1);
 
-	UFUNCTION(BlueprintCallable, Category="slua")
+	UFUNCTION(BlueprintPure,mata = (CompactNodeTitle = "->",BlueprintAutocast), Category="slua")
 	static bool GetBoolFromVar(FLuaBPVar Value,int Index=1);
 
-	UFUNCTION(BlueprintCallable, Category="slua")
+	UFUNCTION(BlueprintPure,mata = (CompactNodeTitle = "->",BlueprintAutocast), Category="slua")
 	static UObject* GetObjectFromVar(FLuaBPVar Value,int Index=1);
 };
